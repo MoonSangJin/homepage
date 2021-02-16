@@ -5,5 +5,5 @@ export default function About() {
 }
 const Background = styled.div`
   height: 100vh;
-  background: yellow;
+  background: #f8bbcb;
 `;

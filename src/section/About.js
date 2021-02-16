@@ -13,10 +13,10 @@ export default function About() {
           </H1>
           <Text>Welcome to my zone😎</Text>
           <Text>
-            💻I am a student who is interested in web development and design.🎨
+            💻I'm a student who is interested in web development and design.🎨
           </Text>
           <Text>
-            ⭐I am growing up dreaming of becoming a great developer someday.⭐
+            ⭐I'm growing up dreaming of becoming a great developer someday.⭐
           </Text>
         </Explain>
       </Container>
@@ -41,7 +41,7 @@ const bopB = keyframes`0% {
 
 const Background = styled.div`
   height: 100vh;
-  background: skyblue;
+  background: #8ab7f8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,10 +51,11 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   background: white;
-  margin: 1rem;
-  width: 90%;
-  padding: 2rem;
+  margin: 15px;
+  padding: 25px;
+  width: 100%;
 
+  font-family: 'Luckiest Guy', cursive;
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -80,15 +81,14 @@ const Explain = styled.div`
   text-align: center;
 `;
 const Text = styled.div`
-  font-family: 'Dancing Script';
+  font-family: 'Luckiest Guy';
   font-weight: bold;
-  font-size: 1rem;
   margin: 8px;
 `;
 
 const H1 = styled.div`
   margin-bottom: 1rem;
-  font-size: 4em;
+  font-size: 3rem;
   padding: 0;
   color: white;
   text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
@@ -96,8 +96,6 @@ const H1 = styled.div`
     0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
     -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1),
     -0.03em 0 0 rgba(0, 0, 0, 1);
-
-  font-family: 'Luckiest Guy', cursive;
 `;
 const Span = styled.span`
   transform: scale(0.9);

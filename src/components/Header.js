@@ -4,18 +4,20 @@ import { Link } from 'react-scroll';
 export default function Header() {
   return (
     <Container>
-      <Link to="home" smooth="true">
-        <MenuButton>Home</MenuButton>
-      </Link>
-      <Link to="about" smooth="true">
-        <MenuButton>About</MenuButton>
-      </Link>
-      <Link to="skill" smooth="true">
-        <MenuButton>Skill</MenuButton>
-      </Link>
-      <Link to="contact" smooth="true">
-        <MenuButton>Contact</MenuButton>
-      </Link>
+      <Wrapper>
+        <Link to="home" smooth="true">
+          <MenuButton>Home</MenuButton>
+        </Link>
+        <Link to="about" smooth="true">
+          <MenuButton>About</MenuButton>
+        </Link>
+        <Link to="skill" smooth="true">
+          <MenuButton>Skill</MenuButton>
+        </Link>
+        <Link to="contact" smooth="true">
+          <MenuButton>Contact</MenuButton>
+        </Link>
+      </Wrapper>
     </Container>
   );
 }
@@ -25,19 +27,28 @@ const Container = styled.div`
   width: 100vw;
   top: 0;
   background: transparent;
-  display: flex;
-  justify-content: center;
+
   z-index: 9999;
 `;
+const Wrapper = styled.div`
+  background: transparent;
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 0px 0px 8px 8px;
 
+  margin-top: 5px;
+`;
 const MenuButton = styled.div`
   font-size: 1.5rem;
   text-align: center;
-  color: grey;
-  margin: 8px;
+  color: white;
+  margin-right: 10px;
 
+  font-family: 'Luckiest Guy';
+  font-weight: bold;
   &:hover {
-    color: white;
+    color: grey;
     cursor: pointer;
   }
 `;
