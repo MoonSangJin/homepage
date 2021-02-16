@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 export default function TyperText() {
   return (
     <TyperContainer>
-      <Text>Developer Jin's zone 👋</Text>
+      <Text>Developer Jin 👋</Text>
     </TyperContainer>
   );
 }

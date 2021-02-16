@@ -1,9 +1,116 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import sangJin from '../assets/image/sj.jpg';
 export default function About() {
-  return <Background></Background>;
+  return (
+    <Background>
+      <Container>
+        <Image src={sangJin} />
+        <Explain>
+          <H1>
+            <Span>ABOUT</Span>
+            <Span>Me</Span>
+          </H1>
+          <Text>Welcome to my zone😎</Text>
+          <Text>
+            💻I am a student who is interested in web development and design.🎨
+          </Text>
+          <Text>
+            ⭐I am growing up dreaming of becoming a great developer someday.⭐
+          </Text>
+        </Explain>
+      </Container>
+    </Background>
+  );
 }
+
+const bop = keyframes` 0% {
+  transform: scale(0.9);
+}
+50%,
+100% {
+  transform: scale(1);
+}`;
+const bopB = keyframes`0% {
+  transform: scale(0.9);
+}
+80%,
+100% {
+  transform: scale(1) rotateZ(-3deg);
+}`;
+
 const Background = styled.div`
   height: 100vh;
   background: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const Container = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  margin: 1rem;
+  width: 90%;
+  padding: 2rem;
+
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`;
+const Image = styled.img`
+  width: 200px;
+  height: 200px;
+
+  border-radius: 8px;
+  &:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+  transition: all 0.5s linear;
+`;
+const Explain = styled.div`
+  margin: 20px;
+  text-align: center;
+`;
+const Text = styled.div`
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 8px;
+`;
+
+const H1 = styled.div`
+  margin-bottom: 1rem;
+  font-size: 4em;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1),
+    -0.03em 0 0 rgba(0, 0, 0, 1);
+
+  font-family: 'Luckiest Guy', cursive;
+`;
+const Span = styled.span`
+  transform: scale(0.9);
+  display: inline-block;
+  &:first-child {
+    animation: ${bop} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      infinite alternate;
+  }
+  &:last-child{
+    animation: ${bopB} 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+    infinite alternate;
+}
+  }
+
+  margin-right:15px;
 `;

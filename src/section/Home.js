@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import Star from '../components/Star';
 import TyperText from '../components/TyperText';
