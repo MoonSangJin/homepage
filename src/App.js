@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './section/Home';
 import About from './section/About';
-import Skill from './section/Skill';
+import Project from './section/Project';
 import Contact from './section/Contact';
 
 export default function App() {
@@ -16,8 +16,8 @@ export default function App() {
       <div id="about">
         <About />
       </div>
-      <div id="skill">
-        <Skill />
+      <div id="project">
+        <Project />
       </div>
       <div id="contact">
         <Contact />

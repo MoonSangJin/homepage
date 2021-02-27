@@ -11,9 +11,6 @@ export default function About() {
             <Span>ABOUT</Span>
             <Span>Me</Span>
           </H1>
-          <H1>
-            <Loading>Loading</Loading>
-          </H1>
           <Text>Welcome to my zone😎</Text>
           <Text>
             💻I'm a student who is interested in web development and design.🎨
@@ -40,15 +37,6 @@ const bopB = keyframes`0% {
 80%,
 100% {
   transform: scale(1) rotateZ(-3deg);
-}`;
-
-const loading = keyframes`
-0% {
-  transform: scale(0.9);
-}
-80%,
-100% {
-  transform: scale(1) rotateZ(5deg);
 }`;
 
 const Background = styled.div`
@@ -118,22 +106,6 @@ const Span = styled.span`
   }
   &:last-child{
     animation: ${bopB} 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
-    infinite alternate;
-}
-  }
-
-  margin-right:15px;
-`;
-
-const Loading = styled.span`
-  transform: scale(0.9);
-  display: inline-block;
-  &:first-child {
-    animation: ${bop} 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
-      infinite alternate;
-  }
-  &:last-child{
-    animation: ${loading} 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
     infinite alternate;
 }
   }

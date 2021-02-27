@@ -11,8 +11,8 @@ export default function Header() {
         <Link to="about" smooth="true">
           <MenuButton>About</MenuButton>
         </Link>
-        <Link to="skill" smooth="true">
-          <MenuButton>Skill</MenuButton>
+        <Link to="project" smooth="true">
+          <MenuButton>Project</MenuButton>
         </Link>
         <Link to="contact" smooth="true">
           <MenuButton>Contact</MenuButton>
@@ -35,7 +35,6 @@ const Wrapper = styled.div`
   width: fit-content;
   display: flex;
   margin: 0 auto;
-  border-radius: 0px 0px 8px 8px;
 
   margin-top: 5px;
 `;
