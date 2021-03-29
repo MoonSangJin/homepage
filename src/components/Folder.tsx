@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-export default function Folder({ children }) {
+type FolderProps = {
+  children: ReactNode;
+};
+export default function Folder({ children }: FolderProps) {
   return <Container>{children}</Container>;
 }
 
