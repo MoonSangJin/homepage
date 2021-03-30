@@ -1,8 +1,9 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-type FolderProps = {
-  children: ReactNode;
-};
+
+interface FolderProps {
+  children: [ReactNode] | string | JSX.Element;
+}
 export default function Folder({ children }: FolderProps) {
   return <Container>{children}</Container>;
 }

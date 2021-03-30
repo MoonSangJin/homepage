@@ -5,7 +5,9 @@ export default function Project() {
   return (
     <Background>
       <FolderList>
-        <Folder>test</Folder>
+        <Folder>
+          <div>children type check</div>
+        </Folder>
       </FolderList>
     </Background>
   );
